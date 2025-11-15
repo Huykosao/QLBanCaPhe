@@ -37,11 +37,19 @@ public class ThemSanPhamActivity extends AppCompatActivity {
         btnLuu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if(editTenSanPham.getText().toString().trim().isEmpty()){
+                    Toast.makeText(ThemSanPhamActivity.this, "Vui lòng nhập tên sản phẩm", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+                if(editGia.getText().toString().trim().isEmpty()) {
+                    Toast.makeText(ThemSanPhamActivity.this, "Vui lòng nhập Giá", Toast.LENGTH_SHORT).show();
+                    return;
+                }
                 String tenSanPham = editTenSanPham.getText().toString().trim();
                 double gia = Double.parseDouble(editGia.getText().toString().trim());
 
-                if(tenSanPham.isEmpty() || gia == 0) {
-                    Toast.makeText(ThemSanPhamActivity.this, "Vui lòng nhập đầy đủ thông tin", Toast.LENGTH_SHORT).show();
+                if(gia == 0) {
+                    Toast.makeText(ThemSanPhamActivity.this, "Giá không được bằng 0", Toast.LENGTH_SHORT).show();
                     return;
                 }
                 dbHelper.insertSanPham(tenSanPham, gia);
