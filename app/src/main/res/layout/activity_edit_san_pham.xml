@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2C79A"
+    tools:context=".EditSanPhamActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:text="Button"
+                app:icon="@drawable/arrow__1_"
+                app:iconTint="#2F2B2B" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="409dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30px"
+                android:layout_weight="1"
+                android:paddingRight="60px"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="60px"
+                android:textStyle="bold"
+                android:visibility="visible"
+                tools:text="Sửa / Xóa sản phẩm" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingLeft="36px"
+                android:paddingTop="36px"
+                android:paddingRight="36px"
+                android:paddingBottom="36px">
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tên sản phẩm :"
+                    android:textColor="#5C3D2E"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/editTenSanPham"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="#FFFFFF"
+                    android:ems="10"
+                    android:hint="Cà phê sữa,..."
+                    android:inputType="text"
+                    android:paddingLeft="42.5px"
+                    android:paddingRight="12.75px"
+                    android:textColor="@color/black" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="14dp">
+
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Giá :"
+                    android:textColor="#5C3D2E"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/editGia"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="#FFFFFF"
+                    android:ems="10"
+                    android:hint="123000 VND"
+                    android:inputType="number"
+                    android:paddingLeft="42.5px"
+                    android:paddingRight="12.75px"
+                    android:textColor="@color/black" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/btnLuu"
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|left"
+                        android:backgroundTint="#5C3D2E"
+                        android:text="Lưu" />
+
+                    <Button
+                        android:id="@+id/btnDungSP"
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|right"
+                        android:backgroundTint="#E45D5D"
+                        android:text="Dừng bán"
+                        android:textColor="@color/white" />
+                </FrameLayout>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

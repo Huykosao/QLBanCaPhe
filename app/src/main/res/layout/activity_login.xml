@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2C79A"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="39dp" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+            app:srcCompat="@drawable/logo_removebg_preview" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="38dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Xin Chào !"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="27dp"
+            android:autoText="false"
+            android:text="Đăng nhập để quản lý cửa hàng cà phê của bạn"
+            android:textAlignment="center"
+            android:textColor="@color/black" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="476dp"
+            android:padding="70px">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="374dp"
+                android:background="@drawable/linear_border"
+                android:orientation="vertical"
+                android:padding="50px">
+
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="20px"
+                    android:text="Đăng Nhập"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="34sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="318dp"
+                    android:layout_height="22dp"
+                    android:text="Tên Đăng Nhập :"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/editTaikhoan"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="#FFFFFF"
+                    android:ems="10"
+                    android:hint="Nhập tài khoản"
+                    android:inputType="text"
+                    android:paddingLeft="42.5px"
+                    android:paddingRight="12.75px"
+                    android:textColor="@color/black" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="27dp">
+
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="103dp"
+                    android:layout_height="wrap_content"
+                    android:text="Mật khẩu :"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/editMatKhau"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="#FFFFFF"
+                    android:ems="10"
+                    android:hint="Nhập Mật khẩu"
+                    android:inputType="textPassword"
+                    android:paddingLeft="42.5px"
+                    android:paddingRight="12.75px"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/txtWarning"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Vui lòng nhập đầy đủ thông tin"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:visibility="invisible" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="27dp">
+
+                </FrameLayout>
+
+                <Button
+                    android:id="@+id/btnDangNhap"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#5C3D2E"
+                    android:text="Đăng Nhập"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+        </FrameLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
