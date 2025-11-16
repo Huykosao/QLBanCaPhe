@@ -39,7 +39,7 @@ public class LoginActivity extends AppCompatActivity {
         txtWarning = findViewById(R.id.txtWarning);
 
 
-        DatabaseHelper dbHelper = new DatabaseHelper(LoginActivity.this);
+        DatabaseHelper dbHelper = new DatabaseHelper(this);
         SQLiteDatabase sqLiteDatabase = dbHelper.getWritableDatabase();
 
         btnDangNhap.setOnClickListener(new View.OnClickListener() {
